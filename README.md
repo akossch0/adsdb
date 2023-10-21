@@ -1,1 +1,1 @@
-# adsdb
+# ADSDB - Data management backbone - Operations 
