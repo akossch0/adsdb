@@ -1,0 +1,39 @@
+name: Python Script Workflow
+
+on:
+  push:
+    paths:
+      - 'landing-zone/temporal/**'
+
+jobs:
+  modify-files:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python with Poetry
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install Poetry
+      run: |
+        curl -sSL https://install.python-poetry.org | python -
+        export PATH="$HOME/.poetry/bin:$PATH"
+
+    - name: Install project dependencies
+      run: poetry install
+
+    - name: Run Python script
+      run: poetry run python your_script.py
+
+    - name: Commit changes
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add .
+        git commit -m "Update files via GitHub Actions"
+        git remote set-url origin "https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git"
+        git push
