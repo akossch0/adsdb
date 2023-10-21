@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'landing-zone/temporal/**'
+  workflow_dispatch:
 
 jobs:
   modify-files:
