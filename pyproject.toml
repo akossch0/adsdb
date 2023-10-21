@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "adsdb-dm-backbone"
+version = "0.1"
+description = "Project for ADSDB subject"
+authors = ["Darryl Abraham and Ákos Schneider"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+duckdb = "*"
+pandas = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+flake8 = "*"
+black = "*"
