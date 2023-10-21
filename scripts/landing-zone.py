@@ -39,6 +39,15 @@ def copy_files_to_persistent(datasets_root: str, dataset_category: str) -> None:
     source_dir = os.path.join(
         datasets_root, "landing-zone", "temporal", dataset_category
     )
+
+    persistent_dir = os.path.join(
+        datasets_root, "landing-zone", "persistent"
+    )
+    
+    if not os.path.exists(persistent_dir):
+        print(f"Creating folder: {persistent_dir}")
+        os.makedirs(persistent_dir)
+        
     target_dir = os.path.join(
         datasets_root, "landing-zone", "persistent", dataset_category
     )
