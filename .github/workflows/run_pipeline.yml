@@ -1,4 +1,4 @@
-name: Python Script Workflow
+name: Pipeline Workflow
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python with Poetry
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.10.12
 
     - name: Install Poetry
       run: |
@@ -27,7 +27,7 @@ jobs:
       run: poetry install
 
     - name: Run Python script
-      run: poetry run python your_script.py
+      run: poetry run python scripts/landing-zone.py
 
     - name: Commit changes
       run: |
