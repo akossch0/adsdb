@@ -1,0 +1,329 @@
+Codi_Dimensio,Desc_Dimensio,Codi_Valor,Desc_Valor_CA,Desc_Valor_ES,Desc_Valor_EN
+1,SEXE,1,Dona,Mujer,Female
+1,SEXE,2,Home,Hombre,Male
+2,EDAT_1,0,0 anys,0 años,0 years
+2,EDAT_1,1,1 anys,1 años,1 years
+2,EDAT_1,2,2 anys,2 años,2 years
+2,EDAT_1,3,3 anys,3 años,3 years
+2,EDAT_1,4,4 anys,4 años,4 years
+2,EDAT_1,5,5 anys,5 años,5 years
+2,EDAT_1,6,6 anys,6 años,6 years
+2,EDAT_1,7,7 anys,7 años,7 years
+2,EDAT_1,8,8 anys,8 años,8 years
+2,EDAT_1,9,9 anys,9 años,9 years
+2,EDAT_1,10,10 anys,10 años,10 years
+2,EDAT_1,11,11 anys,11 años,11 years
+2,EDAT_1,12,12 anys,12 años,12 years
+2,EDAT_1,13,13 anys,13 años,13 years
+2,EDAT_1,14,14 anys,14 años,14 years
+2,EDAT_1,15,15 anys,15 años,15 years
+2,EDAT_1,16,16 anys,16 años,16 years
+2,EDAT_1,17,17 anys,17 años,17 years
+2,EDAT_1,18,18 anys,18 años,18 years
+2,EDAT_1,19,19 anys,19 años,19 years
+2,EDAT_1,20,20 anys,20 años,20 years
+2,EDAT_1,21,21 anys,21 años,21 years
+2,EDAT_1,22,22 anys,22 años,22 years
+2,EDAT_1,23,23 anys,23 años,23 years
+2,EDAT_1,24,24 anys,24 años,24 years
+2,EDAT_1,25,25 anys,25 años,25 years
+2,EDAT_1,26,26 anys,26 años,26 years
+2,EDAT_1,27,27 anys,27 años,27 years
+2,EDAT_1,28,28 anys,28 años,28 years
+2,EDAT_1,29,29 anys,29 años,29 years
+2,EDAT_1,30,30 anys,30 años,30 years
+2,EDAT_1,31,31 anys,31 años,31 years
+2,EDAT_1,32,32 anys,32 años,32 years
+2,EDAT_1,33,33 anys,33 años,33 years
+2,EDAT_1,34,34 anys,34 años,34 years
+2,EDAT_1,35,35 anys,35 años,35 years
+2,EDAT_1,36,36 anys,36 años,36 years
+2,EDAT_1,37,37 anys,37 años,37 years
+2,EDAT_1,38,38 anys,38 años,38 years
+2,EDAT_1,39,39 anys,39 años,39 years
+2,EDAT_1,40,40 anys,40 años,40 years
+2,EDAT_1,41,41 anys,41 años,41 years
+2,EDAT_1,42,42 anys,42 años,42 years
+2,EDAT_1,43,43 anys,43 años,43 years
+2,EDAT_1,44,44 anys,44 años,44 years
+2,EDAT_1,45,45 anys,45 años,45 years
+2,EDAT_1,46,46 anys,46 años,46 years
+2,EDAT_1,47,47 anys,47 años,47 years
+2,EDAT_1,48,48 anys,48 años,48 years
+2,EDAT_1,49,49 anys,49 años,49 years
+2,EDAT_1,50,50 anys,50 años,50 years
+2,EDAT_1,51,51 anys,51 años,51 years
+2,EDAT_1,52,52 anys,52 años,52 years
+2,EDAT_1,53,53 anys,53 años,53 years
+2,EDAT_1,54,54 anys,54 años,54 years
+2,EDAT_1,55,55 anys,55 años,55 years
+2,EDAT_1,56,56 anys,56 años,56 years
+2,EDAT_1,57,57 anys,57 años,57 years
+2,EDAT_1,58,58 anys,58 años,58 years
+2,EDAT_1,59,59 anys,59 años,59 years
+2,EDAT_1,60,60 anys,60 años,60 years
+2,EDAT_1,61,61 anys,61 años,61 years
+2,EDAT_1,62,62 anys,62 años,62 years
+2,EDAT_1,63,63 anys,63 años,63 years
+2,EDAT_1,64,64 anys,64 años,64 years
+2,EDAT_1,65,65 anys,65 años,65 years
+2,EDAT_1,66,66 anys,66 años,66 years
+2,EDAT_1,67,67 anys,67 años,67 years
+2,EDAT_1,68,68 anys,68 años,68 years
+2,EDAT_1,69,69 anys,69 años,69 years
+2,EDAT_1,70,70 anys,70 años,70 years
+2,EDAT_1,71,71 anys,71 años,71 years
+2,EDAT_1,72,72 anys,72 años,72 years
+2,EDAT_1,73,73 anys,73 años,73 years
+2,EDAT_1,74,74 anys,74 años,74 years
+2,EDAT_1,75,75 anys,75 años,75 years
+2,EDAT_1,76,76 anys,76 años,76 years
+2,EDAT_1,77,77 anys,77 años,77 years
+2,EDAT_1,78,78 anys,78 años,78 years
+2,EDAT_1,79,79 anys,79 años,79 years
+2,EDAT_1,80,80 anys,80 años,80 years
+2,EDAT_1,81,81 anys,81 años,81 years
+2,EDAT_1,82,82 anys,82 años,82 years
+2,EDAT_1,83,83 anys,83 años,83 years
+2,EDAT_1,84,84 anys,84 años,84 years
+2,EDAT_1,85,85 anys,85 años,85 years
+2,EDAT_1,86,86 anys,86 años,86 years
+2,EDAT_1,87,87 anys,87 años,87 years
+2,EDAT_1,88,88 anys,88 años,88 years
+2,EDAT_1,89,89 anys,89 años,89 years
+2,EDAT_1,90,90 anys,90 años,90 years
+2,EDAT_1,91,91 anys,91 años,91 years
+2,EDAT_1,92,92 anys,92 años,92 years
+2,EDAT_1,93,93 anys,93 años,93 years
+2,EDAT_1,94,94 anys,94 años,94 years
+2,EDAT_1,95,95 anys,95 años,95 years
+2,EDAT_1,96,96 anys,96 años,96 years
+2,EDAT_1,97,97 anys,97 años,97 years
+2,EDAT_1,98,98 anys,98 años,98 years
+2,EDAT_1,99,99 anys,99 años,99 years
+2,EDAT_1,100,100 anys o més,100 años o más,100 years or more
+2,EDAT_1,101,No consta,No consta,Not avalaible
+3,EDAT_Q,0,0-4 anys,0-4 años,0-4 years
+3,EDAT_Q,1,5-9 anys,5-9 años,5-9 years
+3,EDAT_Q,2,10-14 anys,10-14 años,10-14 years
+3,EDAT_Q,3,15-19 anys,15-19 años,15-19 years
+3,EDAT_Q,4,20-24 anys,20-24 años,20-24 years
+3,EDAT_Q,5,25-29 anys,25-29 años,25-29 years
+3,EDAT_Q,6,30-34 anys,30-34 años,30-34 years
+3,EDAT_Q,7,35-39 anys,35-39 años,35-39 years
+3,EDAT_Q,8,40-44 anys,40-44 años,40-44 years
+3,EDAT_Q,9,45-49 anys,45-49 años,45-49 years
+3,EDAT_Q,10,50-54 anys,50-54 años,50-54 years
+3,EDAT_Q,11,55-59 anys,55-59 años,55-59 years
+3,EDAT_Q,12,60-64 anys,60-64 años,60-64 years
+3,EDAT_Q,13,65-69 anys,65-69 años,65-69 years
+3,EDAT_Q,14,70-74 anys,70-74 años,70-74 years
+3,EDAT_Q,15,75-79 anys,75-79 años,75-79 years
+3,EDAT_Q,16,80-64 anys,80-64 años,80-64 years
+3,EDAT_Q,17,85-89 anys,85-89 años,85-89 years
+3,EDAT_Q,18,90-94 anys,90-94 años,90-94 years
+3,EDAT_Q,19,95-99 anys,95-99 años,95-99 years
+3,EDAT_Q,20,100 anys o més,100 años o más,100 years or more
+3,EDAT_Q,21,No consta,No consta,Not avalaible
+4,EDAT_G,0,0-15 anys,0-15 años,0-15 years
+4,EDAT_G,1,16-24 anys,16-24 años,16-24 years
+4,EDAT_G,2,25-39 anys,25-39 años,25-39 years
+4,EDAT_G,3,40-64 anys,40-64 años,40-64 years
+4,EDAT_G,4,65 anys o més,65 años o más,65 years or more
+4,EDAT_G,5,No consta,No consta,Not avalaible
+5,LLOC_NAIX,1,Barcelona ciutat,Barcelona ciudad,City of Barcelona
+5,LLOC_NAIX,2,Resta de Catalunya,Resto de Cataluña,Rest of Catalonia
+5,LLOC_NAIX,3,Resta d’Espanya,Resto de España,Rest of Spain
+5,LLOC_NAIX,4,Resta de la Unió Europea,Resto de la Unión Europea,Rest of European Union
+5,LLOC_NAIX,5,Resta del món,Resto del mundo,Rest of World
+5,LLOC_NAIX,6,No consta,No consta,Not avalaible
+6,LLOC_NAIX_CCAA,1,Andalusia,Andalucía,Andalucía
+6,LLOC_NAIX_CCAA,2,Aragó,Aragón,Aragón
+6,LLOC_NAIX_CCAA,3,Principat d'Astúries,Principado de Asturias,Principado de Asturias
+6,LLOC_NAIX_CCAA,4,Illes Balears,Illes Balears,Illes Balears
+6,LLOC_NAIX_CCAA,5,Canàries,Canarias,Canarias
+6,LLOC_NAIX_CCAA,6,Cantàbria,Cantabria,Cantabria
+6,LLOC_NAIX_CCAA,7,Castella i Lleó,Castilla y León,Castilla y León
+6,LLOC_NAIX_CCAA,8,Castella - la Manxa,Castilla - La Mancha,Castilla - La Mancha
+6,LLOC_NAIX_CCAA,9,Catalunya,Cataluña,Cataluña
+6,LLOC_NAIX_CCAA,10,Comunitat Valenciana,Comunitat Valenciana,Comunitat Valenciana
+6,LLOC_NAIX_CCAA,11,Extremadura,Extremadura,Extremadura
+6,LLOC_NAIX_CCAA,12,Galícia,Galicia,Galicia
+6,LLOC_NAIX_CCAA,13,Comunitat de Madrid,Comunidad de Madrid,Comunidad de Madrid
+6,LLOC_NAIX_CCAA,14,Regió de Múrcia,Región de Murcia,Región de Murcia
+6,LLOC_NAIX_CCAA,15,Comunitat Foral de Navarra,Comunidad Foral de Navarra,Comunidad Foral de Navarra
+6,LLOC_NAIX_CCAA,16,País Basc,País Vasco,País Vasco
+6,LLOC_NAIX_CCAA,17,"Rioja, La","Rioja, La","Rioja, La"
+6,LLOC_NAIX_CCAA,18,Ceuta,Ceuta,Ceuta
+6,LLOC_NAIX_CCAA,19,Melilla,Melilla,Melilla
+6,LLOC_NAIX_CCAA,20,Estranger,Extranjero,Foreign
+6,LLOC_NAIX_CCAA,21,No consta,No consta,Not avalaible
+7,LLOC_NAIX_REGIO,1,Àfrica oriental,África oriental,Eastern Africa
+7,LLOC_NAIX_REGIO,2,Àfrica central,África central,Middle Africa
+7,LLOC_NAIX_REGIO,3,Àfrica septentrional,África septentrional,Northern Africa
+7,LLOC_NAIX_REGIO,4,Àfrica meridional,África meridional,Southern Africa
+7,LLOC_NAIX_REGIO,5,Àfrica occidental,África occidental,Western Africa
+7,LLOC_NAIX_REGIO,6,Carib,Caribe,Caribbean
+7,LLOC_NAIX_REGIO,7,Amèrica central,América central,Central America
+7,LLOC_NAIX_REGIO,8,Amèrica del sud,América del sur,South America
+7,LLOC_NAIX_REGIO,9,Amèrica del nord,América del norte,Northern America
+7,LLOC_NAIX_REGIO,10,Àsia central,Asia central,Central Asia
+7,LLOC_NAIX_REGIO,11,Àsia oriental,Asia oriental,Eastern Asia
+7,LLOC_NAIX_REGIO,12,Àsia meridional,Asia meridional,Southern Asia
+7,LLOC_NAIX_REGIO,13,Àsia sud-oriental,Asia sur-oriental,South-Eastern Asia
+7,LLOC_NAIX_REGIO,14,Àsia occidental,Ásia occidental,Western Asia
+7,LLOC_NAIX_REGIO,15,Europa oriental,Europa oriental,Eastern Europe
+7,LLOC_NAIX_REGIO,16,Europa septentrional,Europa septentrional,Northern Europe
+7,LLOC_NAIX_REGIO,17,Europa meridional,Europa meridional,Southern Europe
+7,LLOC_NAIX_REGIO,18,Europa occidental,Europa occidental,Western Europe
+7,LLOC_NAIX_REGIO,19,Austràlia i Nova Zelanda,Australia y Nueva Zelanda,Australia and New Zealand
+7,LLOC_NAIX_REGIO,20,Melanèsia,Melanesia,Melanesia
+7,LLOC_NAIX_REGIO,21,Micronèsia,Micronesia,Micronesia
+7,LLOC_NAIX_REGIO,22,Polinèsia,Polinesia,Polynesia
+7,LLOC_NAIX_REGIO,23,No consta,No consta,Not avalaible
+8,NACIONALITAT_G,1,Espanya,España,Spain
+8,NACIONALITAT_G,2,Resta de la Unió Europea,Resto de la Unión Europea,Rest of European Union
+8,NACIONALITAT_G,3,Resta del món,Resto del mundo,Rest of World
+8,NACIONALITAT_G,4,No consta,No consta,Not available
+9,NACIONALITAT_REGIO,1,Àfrica oriental,África oriental,Eastern Africa
+9,NACIONALITAT_REGIO,2,Àfrica central,África central,Middle Africa
+9,NACIONALITAT_REGIO,3,Àfrica septentrional,África septentrional,Northern Africa
+9,NACIONALITAT_REGIO,4,Àfrica meridional,África meridional,Southern Africa
+9,NACIONALITAT_REGIO,5,Àfrica occidental,África occidental,Western Africa
+9,NACIONALITAT_REGIO,6,Carib,Caribe,Caribbean
+9,NACIONALITAT_REGIO,7,Amèrica central,América central,Central America
+9,NACIONALITAT_REGIO,8,Amèrica del sud,América del sur,South America
+9,NACIONALITAT_REGIO,9,Amèrica del nord,América del norte,Northern America
+9,NACIONALITAT_REGIO,10,Àsia central,Asia central,Central Asia
+9,NACIONALITAT_REGIO,11,Àsia oriental,Asia oriental,Eastern Asia
+9,NACIONALITAT_REGIO,12,Àsia meridional,Asia meridional,Southern Asia
+9,NACIONALITAT_REGIO,13,Àsia sud-oriental,Asia sur-oriental,South-Eastern Asia
+9,NACIONALITAT_REGIO,14,Àsia occidental,Ásia occidental,Western Asia
+9,NACIONALITAT_REGIO,15,Europa oriental,Europa oriental,Eastern Europe
+9,NACIONALITAT_REGIO,16,Europa septentrional,Europa septentrional,Northern Europe
+9,NACIONALITAT_REGIO,17,Europa meridional,Europa meridional,Southern Europe
+9,NACIONALITAT_REGIO,18,Europa occidental,Europa occidental,Western Europe
+9,NACIONALITAT_REGIO,19,Austràlia i Nova Zelanda,Australia y Nueva Zelanda,Australia and New Zealand
+9,NACIONALITAT_REGIO,20,Melanèsia,Melanesia,Melanesia
+9,NACIONALITAT_REGIO,21,Micronèsia,Micronesia,Micronesia
+9,NACIONALITAT_REGIO,22,Polinèsia,Polinesia,Polynesia
+9,NACIONALITAT_REGIO,23,No consta,No consta,Not available
+10,NIV_EDUCA_esta,1,Sense estudis,Sin estudios,Less than primary education
+10,NIV_EDUCA_esta,2,"Estudis primaris, certificat d'escolaritat, EGB","Estudios primarios, certificado de escolaridad, EGB",Primary education
+10,NIV_EDUCA_esta,3,"Batxillerat elemental, graduat escolar, ESO, FPI","Bachillerato elemental, graduado escolar, ESO, FPI",Lower secondary education
+10,NIV_EDUCA_esta,4,"Batxillerat superior, BUP, COU, FPII, CFGM grau mitjà","Bachillerato superior, BUP, COU, FPII, CFGM grado medio",Upper secondary or post-secondary non-tertiary education
+10,NIV_EDUCA_esta,5,"Estudis universitaris, CFGS grau superior","Estudios universitarios, CFGS grado superior",Tertiary education
+10,NIV_EDUCA_esta,6,No consta,No consta,Not available
+11,EDAT_ALTA_agg,1,Menys d'1 any,Menos de 1 año,Less than 1 year
+11,EDAT_ALTA_agg,2,D'1 a 5 anys,De 1 a 5 años,From 1 to 5 years
+11,EDAT_ALTA_agg,3,De 6 a 15 anys,De 6 a 15 años,From 6 to 15 years
+11,EDAT_ALTA_agg,4,Més de 15 anys,Más de 15 años,More than 15 years
+11,EDAT_ALTA_agg,5,No consta,No consta,Not available
+12,DECADA,1,Abans de 1930,Antes de 1930,Before 1930
+12,DECADA,2,1930-1939,1930-1939,1930-1939
+12,DECADA,3,1940-1949,1940-1949,1940-1949
+12,DECADA,4,1950-1959,1950-1959,1950-1959
+12,DECADA,5,1960-1969,1960-1969,1960-1969
+12,DECADA,6,1970-1979,1970-1979,1970-1979
+12,DECADA,7,1980-1989,1980-1989,1980-1989
+12,DECADA,8,1990-1999,1990-1999,1990-1999
+12,DECADA,9,2000-2009,2000-2009,2000-2009
+12,DECADA,10,2010-2019,2010-2019,2010-2019
+12,DECADA,11,2020-2030,2020-2030,2020-2023
+13,CCAA_MOV,1,Andalusia,Andalucía,Andalucía
+13,CCAA_MOV,2,Aragó,Aragón,Aragón
+13,CCAA_MOV,3,Principat d'Astúries,Principado de Asturias,Principado de Asturias
+13,CCAA_MOV,4,Illes Balears,Illes Balears,Illes Balears
+13,CCAA_MOV,5,Canàries,Canarias,Canarias
+13,CCAA_MOV,6,Cantàbria,Cantabria,Cantabria
+13,CCAA_MOV,7,Castella i Lleó,Castilla y León,Castilla y León
+13,CCAA_MOV,8,Castella - la Manxa,Castilla - La Mancha,Castilla - La Mancha
+13,CCAA_MOV,8,Castella - la Manxa,Castilla - La Mancha,Castilla - La Mancha
+13,CCAA_MOV,9,Catalunya,Cataluña,Cataluña
+13,CCAA_MOV,10,Comunitat Valenciana,Comunitat Valenciana,Comunitat Valenciana
+13,CCAA_MOV,11,Extremadura,Extremadura,Extremadura
+13,CCAA_MOV,12,Galícia,Galicia,Galicia
+13,CCAA_MOV,13,Comunitat de Madrid,Comunidad de Madrid,Comunidad de Madrid
+13,CCAA_MOV,14,Regió de Múrcia,Región de Murcia,Región de Murcia
+13,CCAA_MOV,15,Comunitat Foral de Navarra,Comunidad Foral de Navarra,Comunidad Foral de Navarra
+13,CCAA_MOV,16,País Basc,País Vasco,País Vasco
+13,CCAA_MOV,17,"Rioja, La","Rioja, La","Rioja, La"
+13,CCAA_MOV,18,Ceuta,Ceuta,Ceuta
+13,CCAA_MOV,19,Melilla,Melilla,Melilla
+13,CCAA_MOV,20,Estranger,Extranjero,Foreign
+13,CCAA_MOV,21,No consta,No consta,Not available
+14,NACIO_DEST_AG,1,Espanyola,Española,Spanish
+14,NACIO_DEST_AG,2,Altres països UE,Otros paises UE,Other UE countries
+14,NACIO_DEST_AG,3,Altres,Otros,Other
+15,COL_SDF,1,Domicili,Domicili,Domicili
+15,COL_SDF,2,Domicili col·lectiu,Domicili col·lectivo,Collective household
+15,COL_SDF,3,Sense domicili,Sin domicilio,Whithout household
+16,N_PERSONES_AGG,1,Una persona,Una persona,One person
+16,N_PERSONES_AGG,2,Dues persones,Dos personas,Two people
+16,N_PERSONES_AGG,3,Tres persones,Tres personas,Three people
+16,N_PERSONES_AGG,4,Quatre persones,Cuatro personas,Four people
+16,N_PERSONES_AGG,5,Cinc persones,Cinco personas,Five people
+16,N_PERSONES_AGG,6,Sis persones,Seis personas,Six people
+16,N_PERSONES_AGG,7,Set persones,Siete personas,Seven people
+16,N_PERSONES_AGG,8,Vuit persones,Ocho personas,Eight people
+16,N_PERSONES_AGG,9,Nou o més persones,Nueve o más personas,Nine or more people
+17,TIPUS_DOMICILI,1,Una dona de 18 a 64 anys,Una mujer de 18 a 64 años,One woman from 18 to 64 years old
+17,TIPUS_DOMICILI,2,Un home de 18 a 64 anys,Un hombre de 18 a 64 años,One man from 18 to 64 years old
+17,TIPUS_DOMICILI,3,Una dona de 65 anys i més,Una mujer de 65 años y más,One woman aged 65 and over
+17,TIPUS_DOMICILI,4,Un home de 65 anys i més,Un hombre de 65 años y más,One man aged 65 and over
+17,TIPUS_DOMICILI,5,Dues persones de 18 a 64 anys,Dos personas de 18 a 64 años,Two people aged 18 to 64
+17,TIPUS_DOMICILI,6,Dues persones de 65 anys i més,Dos personas de 65 años y más,Two people aged 65 and over
+17,TIPUS_DOMICILI,7,Dues persones: una de 18-64 anys i l'altra de 65 i més,Dos personas: una de 18-64 años y otra de 65 y más,Two people: one aged 18-64 and another aged 65 and over
+17,TIPUS_DOMICILI,8,Dues persones o més totes majors de 18 anys,Dos personas o más todas mayores de 18 años,Two or more people over 18 years of age
+17,TIPUS_DOMICILI,9,Dues persones o més: una dona de 18 anys i més amb altres menors de 18 anys,Dos personas o más: una mujer de 18 años y más con otros menores de 18 años,Two or more people: a woman aged 18 and over with others under 18
+17,TIPUS_DOMICILI,10,Dues persones o més: un home de 18 anys i més amb altres menors de 18 anys,Dos personas o más: un hombre de 18 años y más con otros menores de 18 años,Two or more people: a man aged 18 and over with others under 18
+17,TIPUS_DOMICILI,11,Tres persones o més: dues de 18 anys i més i la resta menors de 18 anys,Tres personas o más: Dos de 18 años y más y el resto menores de 18 años,Three or more people: Two aged 18 and over and the rest under 18
+17,TIPUS_DOMICILI,12,Altres domicilis amb una o més persones menors de 18 anys,Otros domicilios con una o más personas menores de 18 años,Other households with one or more people under 18 years of age
+18,DOM_00_18,1,Cap menor de 18 anys,Ningún menor de 18 años,None under 18 years of age
+18,DOM_00_18,2,Un menor,Un menor,A minor
+18,DOM_00_18,3,Dos menors,Dos menores,Two minors
+18,DOM_00_18,4,Tres menors  ,Tres menores,Three minors
+18,DOM_00_18,5,Quatre menors o més,Cuatro menores o más,Four minors or more
+19,DOM_18_64,1,Cap persona de 18 a 64 anys,Ninguna persona de 18 a 64 años,No person aged 18 to 64
+19,DOM_18_64,2,Una persona,Una persona,One person
+19,DOM_18_64,3,Dues persones,Dos personas,Two people
+19,DOM_18_64,4,Tres persones,Tres personas,Three people
+19,DOM_18_64,5,Quatre persones o més,Cuatro personas o más,Four people or more
+20,DOM_65_99,1,Cap persona de 65 anys i més,Ninguna persona de 65 años y más,No person aged 65 and over
+20,DOM_65_99,2,Una persona,Una persona,One person
+20,DOM_65_99,3,Dues persones,Dos personas,Two people
+20,DOM_65_99,4,Tres persones,Tres personas,Three people
+20,DOM_65_99,5,Quatre persones o més,Cuatro personas o más,Four people or more
+21,DOM_DONES,1,Cap dona,Ninguna mujer,No woman
+21,DOM_DONES,2,Una dona,Una mujer,A woman
+21,DOM_DONES,3,Dues dones,Dos mujeres,Two women
+21,DOM_DONES,4,Tres dones,Tres mujeres,Three women
+21,DOM_DONES,5,Quatre dones o més,Cuatro mujeres o más,Four women or more
+22,DOM_HOMES,1,Cap home,Ningún hombre,No man
+22,DOM_HOMES,2,Un home,Un hombre,One man
+22,DOM_HOMES,3,Dos homes,Dos hombres,Two men
+22,DOM_HOMES,4,Tres homes  ,Tres hombres,Three men
+22,DOM_HOMES,5,Quatre homes o més,Cuatro hombres o más,Four men or more
+23,NACIONALITAT_DOMICILI,1,Només nacionalitat espanyola,Solo nacionalidad española,Spanish nationality only
+23,NACIONALITAT_DOMICILI,2,Només nacionalitat estrangera,Solo nacionalidad extranjera,Foreign nationality only
+23,NACIONALITAT_DOMICILI,3,Mixtes,Mixtos,Mixed
+24,DOM_ESP,1,Cap persona espanyola,Ninguna persona española,No spanish person
+24,DOM_ESP,2,Una persona,Una persona,One person
+24,DOM_ESP,3,Dues persones,Dos personas,Two people
+24,DOM_ESP,4,Tres persones,Tres personas,Three people
+24,DOM_ESP,5,Quatre persones o més,Cuatro personas o más,Four people or more
+25,DOM_EST,1,Cap persona estrangera,Ninguna persona estranjera,No foreign person
+25,DOM_EST,2,Una persona,Una persona,One person
+25,DOM_EST,3,Dues persones,Dos personas,Two people
+25,DOM_EST,4,Tres persones,Tres personas,Three people
+25,DOM_EST,5,Quatre persones o més,Cuatro personas o más,Four people or more
+26,DOM_25_39,1,Cap persona de 25 a 39 anys,Ninguna persona de 25 a 39 años,No person aged 25 to 39
+26,DOM_25_39,2,Una persona,Una persona,One person
+26,DOM_25_39,3,Dues persones,Dos personas,Two people
+26,DOM_25_39,4,Tres persones,Tres personas,Three people
+26,DOM_25_39,5,Quatre persones o més,Cuatro personas o más,Four people or more
+27,DOM_40_64,1,Cap persona de 40 a 64 anys,Ninguna persona de 40 a 64 años,No person aged 40 to 64
+27,DOM_40_64,2,Una persona,Una persona,One person
+27,DOM_40_64,3,Dues persones,Dos personas,Two people
+27,DOM_40_64,4,Tres persones,Tres personas,Three people
+27,DOM_40_64,5,Quatre persones o més,Cuatro personas o más,Four people or more
