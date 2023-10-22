@@ -8,19 +8,20 @@ This project is designed to run an data pipeline using a GitHub Workflow. It inc
 
 Before you begin, ensure that you have the following prerequisites installed on your system:
 
-- **Python version 3.10.12**: Make sure you have Python installed on your system. You can download Python from [python.org](https://www.python.org/downloads/).
+- **Make**: Make sure you have `Make` installed on your system.
 
-- **Poetry**: This project uses Poetry for dependency management. You can install Poetry by following the instructions on the official website: [Poetry Installation](https://python-poetry.org/docs/#installation). Try running 
+- **Python version 3.10.12**: Make sure you have Python installed on your system. I recommend using `pyenv`.
+
+- **Poetry**: This project uses Poetry for dependency management. Try running 
     ```bash
     pip install poetry
     ```
-in your terminal to install Poetry.
 
 ## Project Setup
 
 1. **Clone the Repository:**
    ```bash
-   git clone (https://github.com/akossch0/adsdb.git)
+   git clone https://github.com/akossch0/adsdb.git
    cd adsdb
    ```
 
@@ -37,7 +38,7 @@ in your terminal to install Poetry.
   ```bash
   make format
   ```
-  This target uses Black to format the code in the `scripts/` directory and the `run.py` script.
+  This target uses Black to format the code in the `scripts/` directory.
 
 - **Lint Code:**
   ```bash
