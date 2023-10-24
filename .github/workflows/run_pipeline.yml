@@ -30,8 +30,17 @@ jobs:
     - name: Install project dependencies
       run: poetry install
 
-    - name: Run Python script
-      run: poetry run python scripts/landing-zone.py
+    - name: Run landing-zone script
+      run: poetry run python scripts/landing-zone/landing-zone.py
+
+    - name: Run formatted-zone script
+      run: poetry run python scripts/formatted-zone/formatted-zone.py
+
+    - name: Run trusted-zone script
+      run: poetry run python scripts/trusted-zone/trusted-zone.py
+
+    - name: Run exploitation-zone script
+      run: poetry run python scripts/exploitation-zone/exploitation-zone.py
 
     - name: Commit changes
       run: |
