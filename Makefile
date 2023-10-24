@@ -41,6 +41,14 @@ run-exploitation:
 # Run all zones
 run: run-landing run-formatted run-trusted run-exploitation
 
+# Clean datasets
+clean-datasets:
+	@echo "Cleaning datasets..."
+	rm -rf datasets/landing-zone/persistent/*
+	rm -rf datasets/formatted-zone/*
+	rm -rf datasets/trusted-zone/*
+	rm -rf datasets/exploitation-zone/*
+
 # Help target to display available targets and their descriptions
 help:
 	@echo "Available targets:"
@@ -53,8 +61,11 @@ help:
 	@echo "  run-trusted   		- Run trusted-zone."
 	@echo "  run-exploitation 	- Run exploitation-zone."
 	@echo "  run           		- Run all zones."
+	@echo "  clean-datasets 	- Clean datasets."
 
 # Clean up the virtual environment and any generated files (optional)
 clean:
-	@echo "Cleaning up..."
+	@echo "Cleaning up venv..."
 	poetry env remove $(shell poetry env info -p)
+	@echo "Cleaning up datasets..."
+	clean-datasets
