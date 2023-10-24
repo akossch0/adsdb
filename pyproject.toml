@@ -4,11 +4,21 @@ version = "0.1"
 description = "Project for ADSDB subject"
 authors = ["Darryl Abraham and Ákos Schneider"]
 readme = "README.md"
+packages = [
+    { include = "data_io", from = "scripts" },
+    { include = "landing-zone", from = "scripts" },
+    { include = "formatted-zone", from = "scripts" },
+    { include = "trusted-zone", from = "scripts" },
+    { include = "exploitation-zone", from = "scripts" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 duckdb = "*"
 pandas = "*"
+pyod = "^1.1.0"
+scikit-learn = "^1.3.1"
+fancyimpute = "^0.7.0"
 
 
 [build-system]

@@ -8,4 +8,4 @@ exclude = .venv/
 # F405: 'col', 'ParseException', 'OneOrMore', 'LineEnd', 'Empty', 'Group',
 # 'Opt', 'Combine', 'Regex', 'List', 'ParserElement' may be undefined
 # E731: do not assign a lambda expression, use a def
-ignore = F405, E731
+ignore = F405, E731, W503

@@ -31,3 +31,7 @@ __pycache__/
 # Ignore temporary files
 *.swp
 *~
+
+# Ignore db files
+*.sqlite3
+*.db
