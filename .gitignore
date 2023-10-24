@@ -32,6 +32,3 @@ __pycache__/
 *.swp
 *~
 
-# Ignore db files
-*.sqlite3
-*.db
