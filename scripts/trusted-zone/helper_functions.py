@@ -1,67 +1,71 @@
-from dataset import MainDataset, MetaDataset, OutlierRemovalMode
-from helper_functions import fix_valor_column
+import pandas as pd
+import numpy as np
 
-datasets_root_folder = "datasets"
-path_to_formatted_db = "datasets/formatted-zone/formatted.db"
 
-education_dataset_category = "education"
-education_important_columns = {"targets": ["Valor"], "type": "NIV_EDUCA_esta"}
-education_outlier_removal_mode = OutlierRemovalMode.UNI
-education_dataset = MainDataset(
-    dataset_category=education_dataset_category,
-    path_to_source_db=path_to_formatted_db,
-    important_columns=education_important_columns,
-    outlier_removal_mode=education_outlier_removal_mode,
-    path_to_datasets_root=datasets_root_folder,
-    cleaning_function=fix_valor_column,
-)
+def compare_dataframe_schemas(
+    df1: pd.DataFrame, df2: pd.DataFrame, table_name1: str, table_name2: str
+) -> bool:
+    # Compare column count
+    if len(df1.columns) != len(df2.columns):
+        print(
+            f"Column count is different. {table_name1} has {len(df1.columns)} columns, while {table_name2} has {len(df2.columns)} columns."
+        )
+        return False
 
-income_dataset_category = "income"
-income_important_columns = {
-    "targets": ["Total"],
-    "type": "Indicadores de renta media y mediana",
-}
-income_outlier_removal_mode = OutlierRemovalMode.UNI
-income_dataset = MainDataset(
-    dataset_category=income_dataset_category,
-    path_to_source_db=path_to_formatted_db,
-    important_columns=income_important_columns,
-    outlier_removal_mode=income_outlier_removal_mode,
-    path_to_datasets_root=datasets_root_folder,
-)
+    # Compare column names
+    if list(df1.columns) != list(df2.columns):
+        print("Column names differ:")
+        diff_columns = set(df1.columns).symmetric_difference(set(df2.columns))
+        for column in diff_columns:
+            if column in df1.columns and column not in df2.columns:
+                print(f"Column '{column}' is missing in {table_name2}.")
+            elif column in df2.columns and column not in df1.columns:
+                print(f"Column '{column}' is missing in {table_name1}.")
+        return False
 
-main_datasets = [education_dataset, income_dataset]
-for dataset in main_datasets:
-    print("-" * 100)
-    headline = f"Dataset: {dataset.dataset_category}".upper()
-    len_of_sides = (100 - len(headline)) // 2
-    print(len_of_sides * "-" + headline + len_of_sides * "-")
-    print("-" * 100)
-    dataset.load_formatted_data()
-    try:
-        dataset.merge_dfs()
-    except Exception as e:
-        print(e)
-        print(f"Shutting down due to error in {dataset.dataset_category} dataset")
-        exit()
-    print(dataset.df.head())
-    dataset.perform_eda()
-    dataset.perform_data_quality_processes()
-    dataset.copy_to_trusted()
+    # Compare data types
+    for column in df1.columns:
+        if df1[column].dtype != df2[column].dtype:
+            print(
+                f"Data type for column '{column}' differs. {table_name1} has type {df1[column].dtype}, while {table_name2} has type {df2[column].dtype}."
+            )
+            return False
+    return True
 
-meta_dataset_category = "meta"
-meta_dataset = MetaDataset(
-    dataset_category=meta_dataset_category,
-    path_to_source_db=path_to_formatted_db,
-    path_to_datasets_root=datasets_root_folder,
-)
-print("-" * 100)
-headline = f"Dataset: {meta_dataset.dataset_category}".upper()
-len_of_sides = (100 - len(headline)) // 2
-print(len_of_sides * "-" + headline + len_of_sides * "-")
-print("-" * 100)
-meta_dataset.load_formatted_data()
-meta_dataset.merge_dfs()
-meta_dataset.perform_eda()
-meta_dataset.perform_data_quality_processes()
-meta_dataset.copy_to_trusted()
+
+# tukeys method (univariate)
+def tm_outliers(df: pd.DataFrame, variable: str, strict: bool) -> list:
+    # Calculate descriptive statistics for the variable of interest
+    desc_stats = df[variable].describe()
+
+    # Extract quartiles and IQR from the descriptive statistics
+    q1, q3 = desc_stats[["25%", "75%"]]
+    iqr = q3 - q1
+
+    # Calculate inner and outer fences
+    inner_fence = 1.5 * iqr
+    outer_fence = 3 * iqr
+
+    inner_fence_le, inner_fence_ue = q1 - inner_fence, q3 + inner_fence
+    outer_fence_le, outer_fence_ue = q1 - outer_fence, q3 + outer_fence
+
+    # Identify outliers
+    outliers_prob = df[
+        (df[variable] <= outer_fence_le) | (df[variable] >= outer_fence_ue)
+    ].index
+    outliers_poss = df[
+        (df[variable] <= inner_fence_le) | (df[variable] >= inner_fence_ue)
+    ].index
+
+    # Return results
+    if outliers_prob.empty and outliers_poss.empty:
+        return list()
+    elif strict == 1:
+        return list(outliers_prob)
+    elif strict == 0:
+        return list(outliers_poss)
+
+
+def fix_valor_column(df: pd.DataFrame) -> pd.DataFrame:
+    df["Valor"] = pd.to_numeric(df["Valor"], errors="coerce").fillna(np.nan)
+    return df
