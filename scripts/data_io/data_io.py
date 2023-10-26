@@ -50,8 +50,13 @@ def write_data(df: pd.DataFrame, path_to_db: str, table_name: str) -> None:
         path_to_db (str): The path to the DuckDB database.
         table_name (str): The name of the table to save.
     """
+    dir_of_db = os.path.dirname(path_to_db)
+    if not os.path.exists(dir_of_db):
+        print(f"Creating folder: {dir_of_db}")
+        os.makedirs(dir_of_db)
+
     if not os.path.exists(path_to_db):
-        print("Creating db file for trusted zone")
+        print(f"Creating db file: {path_to_db}")
         con = duckdb.connect(path_to_db)
         con.close()  # this should create the file
 
