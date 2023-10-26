@@ -41,7 +41,7 @@ def load_data(path_to_db: str, table_name: str) -> pd.DataFrame:
     return df
 
 
-def overwrite_data(df: pd.DataFrame, path_to_db: str, table_name: str) -> None:
+def write_data(df: pd.DataFrame, path_to_db: str, table_name: str) -> None:
     """
     Save a table to a DuckDB database.
 
@@ -50,12 +50,21 @@ def overwrite_data(df: pd.DataFrame, path_to_db: str, table_name: str) -> None:
         path_to_db (str): The path to the DuckDB database.
         table_name (str): The name of the table to save.
     """
+    if not os.path.exists(path_to_db):
+        print("Creating db file for trusted zone")
+        con = duckdb.connect(path_to_db)
+        con.close()  # this should create the file
+
     con = duckdb.connect(path_to_db)
     con.register("df", df)
     if table_exists(con, table_name):
+        print(f"Overwriting dataset in table {table_name}")
         con.execute(f"DELETE FROM {table_name}")
         con.execute(f"INSERT INTO {table_name} SELECT * FROM df")
     else:
+        print(
+            f"Table {table_name} does not exist, creating from df with {len(df)} rows..."
+        )
         con.execute(f"CREATE TABLE {table_name} AS SELECT * FROM df")
     con.close()
 
