@@ -16,7 +16,11 @@ def compare_dataframe_schemas(
     if list(df1.columns) != list(df2.columns):
         print("Column names differ:")
         diff_columns = set(df1.columns).symmetric_difference(set(df2.columns))
-        print(diff_columns)
+        for column in diff_columns:
+            if column in df1.columns and column not in df2.columns:
+                print(f"Column '{column}' is missing in {table_name2}.")
+            elif column in df2.columns and column not in df1.columns:
+                print(f"Column '{column}' is missing in {table_name1}.")
         return False
 
     # Compare data types
