@@ -34,6 +34,12 @@ Before you begin, ensure that you have the following prerequisites installed on 
 
 ## Available Targets
 
+- **Install Dependencies:**
+  ```bash
+  make install
+  ```
+  This target installs project dependencies using Poetry.
+
 - **Format Code:**
   ```bash
   make format
@@ -45,6 +51,42 @@ Before you begin, ensure that you have the following prerequisites installed on 
   make lint
   ```
   This target runs Flake8 for code linting to ensure code quality.
+
+- **Run Landing Zone:**
+  ```bash
+  make run-landing
+  ```
+  This target executes the landing-zone script.
+
+- **Run Formatted Zone:**
+  ```bash
+  make run-formatted
+  ```
+  This target executes the formatted-zone script.
+
+- **Run Trusted Zone:**
+  ```bash
+  make run-trusted
+  ```
+  This target executes the trusted-zone script.
+
+- **Run Exploitation Zone:**
+  ```bash
+  make run-exploitation
+  ```
+  This target executes the exploitation-zone script.
+
+- **Run All Zones:**
+  ```bash
+  make run
+  ```
+  This target runs all zones: landing, formatted, trusted, and exploitation.
+
+- **Clean Datasets:**
+  ```bash
+  make clean-datasets
+  ```
+  This target cleans up datasets in landing, formatted, trusted, and exploitation zones.
 
 - **Display Help:**
   ```bash
