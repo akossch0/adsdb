@@ -103,10 +103,9 @@ class Dataset(ABC):
     def merge_dfs(self):
         mergeable = self.__mergeability_condition()
         if not mergeable:
-            print(
-                "Can not merge formatted tables, because there is a difference in schema"
+            raise Exception(
+                f"Can not merge formatted tables of {self.dataset_category}"
             )
-            return
         if len(self.table_name_df_tuples) == 1:
             self.df = self.table_name_df_tuples[0][1]
             self.__strip_df()
