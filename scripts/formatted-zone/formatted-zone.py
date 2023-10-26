@@ -1,24 +1,7 @@
 import os
 import duckdb
 import pandas as pd
-
-
-def table_exists(con, table_name: str) -> bool:
-    """
-    Check if a table exists in the DuckDB database.
-
-    Args:
-        con (duckdb.Connection): The DuckDB database connection.
-        table_name (str): The name of the table to check.
-
-    Returns:
-        bool: True if the table exists, False otherwise.
-    """
-    try:
-        con.table(table_name)
-        return True
-    except duckdb.CatalogException:
-        return False
+from data_io.data_io import write_data
 
 
 def copy_to_formatted(datasets_root: str, dataset_category: str) -> None:
@@ -53,25 +36,13 @@ def copy_to_formatted(datasets_root: str, dataset_category: str) -> None:
         os.makedirs(target_dir)
 
     db_file_path = os.path.join(target_dir, "formatted.db")
-    if not os.path.exists(db_file_path):
-        print("Creating db file for formatted zone")
-        con = duckdb.connect(db_file_path)
-        con.close()  # this should create the file
 
     con = duckdb.connect(db_file_path)
     for source_file in source_files:
         source_file_path = os.path.join(source_dir, source_file)
         dataset_name = os.path.splitext(source_file)[0]
         df = pd.read_csv(source_file_path)
-        if not table_exists(con, dataset_name):
-            print(
-                f"Table {dataset_name} does not exist, creating from df with {len(df)} rows..."
-            )
-            con.execute(f"CREATE TABLE {dataset_name} AS SELECT * FROM df")
-        else:
-            print(f"Overwriting dataset in table {dataset_name}")
-            con.execute(f"DELETE FROM {dataset_name}")
-            con.execute(f"INSERT INTO {dataset_name} AS SELECT * FROM df")
+        write_data(df, db_file_path, dataset_name)
     con.close()
 
 
