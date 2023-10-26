@@ -38,7 +38,12 @@ for dataset in main_datasets:
     print(len_of_sides * "-" + headline + len_of_sides * "-")
     print("-" * 100)
     dataset.load_formatted_data()
-    dataset.merge_dfs()
+    try:
+        dataset.merge_dfs()
+    except Exception as e:
+        print(e)
+        print(f"Shutting down due to error in {dataset.dataset_category} dataset")
+        exit()
     print(dataset.df.head())
     dataset.perform_eda()
     dataset.perform_data_quality_processes()
