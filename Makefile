@@ -66,6 +66,6 @@ help:
 # Clean up the virtual environment and any generated files (optional)
 clean:
 	@echo "Cleaning up venv..."
-	poetry env remove $(shell poetry env info -p)
+	rm -rf .venv
 	@echo "Cleaning up datasets..."
 	clean-datasets
