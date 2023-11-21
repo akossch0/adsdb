@@ -1,0 +1,20 @@
+analytical sandboxes zone:
+- subset of exploitation zone
+- decide what data is necessary for the model
+- decide what format to save it in (tensor, df, sql)
+
+feature gen zone: (prep data for the algorithm)
+- encoding -> ed levels to ordinal
+- discretization -> normalize income amounts
+- prep null values -> check if any
+- labeling (for supervised algos)
+- feature selection (PCA)
+- generate train/test/valid split -> weighted sampling
+
+model training zone:
+- traceability (governance) for model training (what data was used, what features, target, & so on)
+	(feature store) 
+-> store everything you need to reproduce the training
+
+Weights&biases: tool to implement the data analysis backbone
+could be used but needs to be discussed with Oscar Romero (has to be a comprehensive use of the tool)
