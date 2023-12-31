@@ -31,7 +31,7 @@ jobs:
       run: poetry install
 
     - name: Run prediction script
-      run: poetry run python scripts/data-analysis-backbone/prediction.py
+      run: poetry run python scripts/data-analysis-backbone-1/prediction.py
 
     - name: Commit changes
       run: |
