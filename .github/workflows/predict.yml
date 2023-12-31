@@ -39,7 +39,7 @@ jobs:
         git config --global user.name "GitHub Actions"
         git init
         git add .
-        git commit -m "pipeline run"
+        git commit -m "prediction ran"
     
     - name: Push changes
       uses: ad-m/github-push-action@master
