@@ -26,7 +26,7 @@ predict:
 # Run data discovery for deaths, population and gini
 discover:
 	@echo "Running data discovery..."
-	poetry run python scripts/data_discovery/deaths_population_gini.py
+	poetry run python scripts/data-discovery/deaths_population_gini.py
 
 # Run landing-zone
 run-landing:
