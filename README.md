@@ -56,6 +56,11 @@ Before you begin, ensure that you have the following prerequisites installed on 
   make predict
   ```
   This target executes model prediction operating on data from `datasets/predict/input`.
+- **Run data discovery for deaths, population and gini**
+  ```bash
+  make discover
+  ```
+  This target executes data discovery for deaths, population and gini.
 - **Run Landing Zone:**
   ```bash
   make run-landing

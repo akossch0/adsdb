@@ -118,3 +118,10 @@ def copy_to_zone(
         con.execute(f"DELETE FROM {table_name}")
         con.execute(f"INSERT INTO {table_name} SELECT * FROM df")
     con.close()
+
+
+def execute_query(sql_query: str, path_to_exploitation_db: str) -> pd.DataFrame:
+    con = duckdb.connect(path_to_exploitation_db)
+    df = con.sql(sql_query).df()
+    con.close()
+    return df

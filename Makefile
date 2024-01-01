@@ -23,6 +23,11 @@ predict:
 	@echo "Running prediction..."
 	poetry run python scripts/data-analysis-backbone-1.py/prediction.py
 
+# Run data discovery for deaths, population and gini
+discover:
+	@echo "Running data discovery..."
+	poetry run python scripts/data_discovery/deaths_population_gini.py
+
 # Run landing-zone
 run-landing:
 	@echo "Running landing-zone..."
