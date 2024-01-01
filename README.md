@@ -51,7 +51,11 @@ Before you begin, ensure that you have the following prerequisites installed on 
   make lint
   ```
   This target runs Flake8 for code linting to ensure code quality.
-
+- **Predict on test set**
+  ```bash
+  make predict
+  ```
+  This target executes model prediction operating on data from `datasets/predict/input`.
 - **Run Landing Zone:**
   ```bash
   make run-landing
