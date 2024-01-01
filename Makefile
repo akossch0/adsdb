@@ -18,6 +18,11 @@ lint:
 	@echo "Running Flake8 for code linting..."
 	poetry run flake8
 
+# Run prediction
+predict:
+	@echo "Running prediction..."
+	poetry run python scripts/data-analysis-backbone-1.py/prediction.py
+
 # Run landing-zone
 run-landing:
 	@echo "Running landing-zone..."
