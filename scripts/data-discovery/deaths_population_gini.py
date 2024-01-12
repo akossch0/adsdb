@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import duckdb
 import os
 from data_io.data_io import execute_query, write_data
 
@@ -178,7 +177,7 @@ location_df["section"] = location_df["section"].astype(str)
 
 print("Loading Year data...")
 year_query = """
-select distinct(year) 
+select distinct(year)
 from Income
 """
 year_df = execute_query(year_query, path_to_exploitation_db)
